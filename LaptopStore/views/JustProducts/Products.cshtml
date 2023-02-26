@@ -1,0 +1,26 @@
+﻿@using LaptopStore.ViewModels;
+@model ProductAndModelsVM
+
+
+<h1 style="text-align:center;">Products</h1>
+
+<ul class="laptops">
+    @foreach (var item in Model.Products)
+    {
+        <li>
+          <div class="baseProduct">
+                <a href="">
+                    <div class="image">
+                        <img src="@item.ImgSrc">
+                    </div>
+               </a>
+                <div class="info">
+                    <h4>Product name: <span style="color:red;">@item.Name</span></h4>
+                    <p><b>ID: <span style="color:red;"> @item.Id</span></b></p>
+                    <p><b>Price: <span style="color:red;">@item.Price$</span></b></p>
+                </div> 
+
+          </div>
+        </li>
+    }
+</ul>

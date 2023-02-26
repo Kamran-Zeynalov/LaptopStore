@@ -1,0 +1,13 @@
+﻿@using LaptopStore.ViewModels;
+@model ProductAndModelsVM
+
+
+<h1 style="text-align:center;">Product's Models</h1>
+<ul class="mainUl">
+    @foreach (var item in Model.ProductModels)
+    {
+        <li style="transition:.3s;">
+            @item.ProductModel
+        </li>
+    }
+</ul>
